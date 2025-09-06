@@ -1,0 +1,4 @@
+sources:
+  0.0.1:
+    sha256: xxxxxx
+    url: https://github.com/author/pkg-name/releases/download/0.0.1/pkg-name-0.0.1.zip
