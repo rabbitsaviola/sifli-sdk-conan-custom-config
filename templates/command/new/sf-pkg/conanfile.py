@@ -1,9 +1,9 @@
 from conan import ConanFile
-from conan.tools.files import copy
+from conan.tools.files import copy, get
 import os
 
 
-class {{name|capitalize}}Recipe(ConanFile):
+class {{name.replace('-', ' ').title().replace(' ', '')}}Recipe(ConanFile):
     name = "{{name}}"
     package_type = "unknown"
 
@@ -22,6 +22,9 @@ class {{name|capitalize}}Recipe(ConanFile):
         # self.requires("fmt/8.1.1")
         pass
    
+    def source(self):
+        get(self, **self.conan_data["sources"][self.version], strip_root=True)
+
     def generate(self):
         pass
 
