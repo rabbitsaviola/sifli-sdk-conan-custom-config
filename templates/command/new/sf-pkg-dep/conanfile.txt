@@ -1,0 +1,7 @@
+[requires]
+package-name/0.0.1
+
+
+[generators]
+SConsDeps
+KconfigDeps
